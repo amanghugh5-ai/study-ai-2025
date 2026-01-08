@@ -1,0 +1,111 @@
+You are a senior full-stack developer.
+
+Build a COMPLETE, production-ready AI Study Helper Web App.
+
+TECH STACK:
+- Frontend: HTML, CSS, Vanilla JavaScript
+- Backend: Python Flask
+- AI: OpenAI GPT API
+- Styling: Modern, clean UI (Tailwind-like styling using pure CSS)
+- Responsive: Mobile + Desktop
+- Single-page app style
+
+APP NAME:
+AI Study Helper
+
+APP FEATURES:
+1. Question Solver
+   - User pastes a question
+   - AI gives a clear, step-by-step explanation
+   - Simple language for students
+
+2. Notes Summarizer
+   - User pastes long notes
+   - AI returns:
+     - Short summary
+     - Bullet points
+     - Key concepts
+
+3. MCQ Generator
+   - User enters a topic
+   - AI generates:
+     - 5 MCQs
+     - 4 options each
+     - Correct answers at the bottom
+
+4. Subject Selector
+   - Dropdown with:
+     - Math
+     - Physics
+     - Chemistry
+     - Biology
+     - English
+     - Computer Science
+
+5. Usage Limit System
+   - Free users: 5 requests per day
+   - Show remaining requests
+   - Simple in-memory counter (no auth for now)
+
+6. Error Handling
+   - Handle empty input
+   - Handle API errors
+   - Show user-friendly messages
+
+UI / STYLING REQUIREMENTS:
+- Centered card layout
+- Gradient header
+- Rounded corners
+- Soft shadows
+- Buttons with hover effects
+- Clean typography
+- Dark-on-light theme
+- Loading spinner while AI is generating response
+
+PAGES / SECTIONS:
+- Header with app name
+- Feature tabs:
+  - Solve Question
+  - Summarize Notes
+  - Generate MCQs
+- Input textarea
+- Generate button
+- Output response box
+- Footer with text: "Powered by AI Study Helper"
+
+BACKEND REQUIREMENTS:
+- Flask server
+- Single endpoint: /generate
+- Accept JSON:
+  - feature_type (solve, summarize, mcq)
+  - subject
+  - user_input
+- Call OpenAI API with strong prompts
+- Return formatted response
+
+AI PROMPTS:
+- Question Solver Prompt:
+  "You are a professional tutor. Explain the following question step by step in simple language with examples."
+
+- Summarizer Prompt:
+  "Summarize the following notes into short bullet points and key takeaways."
+
+- MCQ Prompt:
+  "Create 5 multiple-choice questions from the given topic. Provide 4 options and show correct answers at the end."
+
+FILE STRUCTURE:
+- main.py (Flask backend)
+- templates/index.html
+- static/style.css
+- static/script.js
+
+IMPORTANT:
+- Include comments in code
+- Make sure the app runs successfully on Replit
+- Use environment variable for OpenAI API key
+- Return clean, formatted AI responses
+- Do NOT leave placeholders
+- Output complete working code
+
+DELIVERABLE:
+Provide the FULL working project code with all files.
